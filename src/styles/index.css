@@ -1,0 +1,85 @@
+/* CUSTOM PROPERTIES */
+:root {
+  --white-color: #fff;
+  --black-color: #141414;
+  --secondary-color: #6c757d;
+  --secondary-color-2: #373b3e;
+  --font: "Roboto", sans-serif;
+}
+
+/* RESET */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+[id] {
+  scroll-margin-top: 2ex;
+}
+
+h1 {
+  text-align: center;
+}
+
+.formInput::placeholder {
+  color: var(--secondary-color) !important;
+}
+
+.font-size {
+  font-size: 12px;
+}
+
+.imagen {
+  width: 3%;
+}
+
+.coinSymbol {
+  color: var(--secondary-color) !important;
+}
+
+.trHead {
+  border-color: var(--white-color);
+}
+
+.trBody {
+  border-color: var(--secondary-color-2);
+}
+
+@media screen and (min-width: 768px) {
+  .imagen {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imagen {
+    width: 20%;
+  }
+
+  .font-size {
+    font-size: 10px;
+  }
+}
